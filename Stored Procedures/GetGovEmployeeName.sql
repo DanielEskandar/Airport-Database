@@ -1,0 +1,9 @@
+CREATE PROCEDURE GetGovEmployeeName
+	@Id int
+AS
+BEGIN
+	SELECT Name
+	FROM GOVLOGINFO
+	WHERE ID = @Id
+END
+GO
